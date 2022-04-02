@@ -1,9 +1,10 @@
-import 'package:flutter_getx_boilerplate/app/app_keys.dart';
-import 'package:flutter_getx_boilerplate/app/routes.dart';
-import 'package:flutter_getx_boilerplate/app/util/log.dart';
-import 'package:flutter_getx_boilerplate/controller/base_controller.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+
+import '../app/app_keys.dart';
+import '../app/routes.dart';
+import '../app/util/app_log.dart';
+import 'base_controller.dart';
 
 class SplashController extends BaseController {
   @override

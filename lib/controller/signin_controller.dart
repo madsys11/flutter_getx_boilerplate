@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_boilerplate/app/routes.dart';
-import 'package:flutter_getx_boilerplate/controller/base_controller.dart';
-import 'package:flutter_getx_boilerplate/data/repositiory/user_repository.dart';
 import 'package:get/get.dart';
 
 import '../app/app_string.dart';
-import '../data/repositiory/repository_tag.dart';
+import '../app/routes.dart';
+import '../data/repository/repository_tag.dart';
+import '../data/repository/user_repository.dart';
+import 'base_controller.dart';
 
 class SigninController extends BaseController {
   final UserRepository _userRepository = Get.find(tag: RepositoryTag.user);

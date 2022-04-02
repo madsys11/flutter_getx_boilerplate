@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_boilerplate/controller/signout_controller.dart';
 import 'package:get/get.dart';
 
 import '../../../controller/post_controller.dart';
+import '../../../controller/signout_controller.dart';
 import '../../widget/loading_container.dart';
 import 'widget/body.dart';
 

@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
 
 import '../data/model/post.dart';
-import '../data/repositiory/post_repository.dart';
-import '../data/repositiory/repository_tag.dart';
+import '../data/repository/post_repository.dart';
+import '../data/repository/repository_tag.dart';
 import 'base_controller.dart';
 
 class PostController extends BaseController {

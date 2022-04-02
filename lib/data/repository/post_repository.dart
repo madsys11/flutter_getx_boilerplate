@@ -1,4 +1,4 @@
-import '../../app/util/log.dart';
+import '../../app/util/app_log.dart';
 import '../model/post.dart';
 import '../service/rest_api.dart';
 import '../service/rest_service.dart';

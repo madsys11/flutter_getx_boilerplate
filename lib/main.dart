@@ -3,14 +3,14 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_getx_boilerplate/app/app_string.dart';
-import 'package:flutter_getx_boilerplate/app/theme/app_theme.dart';
-import 'package:flutter_getx_boilerplate/app/util/fake_https.dart';
-import 'package:flutter_getx_boilerplate/binding/global_binding.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
+import 'app/app_string.dart';
 import 'app/routes.dart';
+import 'app/theme/app_theme.dart';
+import 'app/util/fake_https.dart';
+import 'binding/global_binding.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

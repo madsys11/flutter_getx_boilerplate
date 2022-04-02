@@ -1,7 +1,8 @@
-import 'package:flutter_getx_boilerplate/app/routes.dart';
-import 'package:flutter_getx_boilerplate/controller/base_controller.dart';
-import 'package:flutter_getx_boilerplate/data/repositiory/user_repository.dart';
 import 'package:get/get.dart';
+
+import '../app/routes.dart';
+import '../data/repository/user_repository.dart';
+import 'base_controller.dart';
 
 class SignoutController extends BaseController {
   final UserRepository _userRepository =

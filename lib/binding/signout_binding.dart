@@ -1,5 +1,6 @@
-import 'package:flutter_getx_boilerplate/controller/signout_controller.dart';
 import 'package:get/instance_manager.dart';
+
+import '../controller/signout_controller.dart';
 
 class SignoutBinding extends Bindings {
   @override
