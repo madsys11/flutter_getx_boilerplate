@@ -30,12 +30,12 @@ This project is a sample for flutter MVVM pattern. (use getx)
 <br>
 
 ## Screenshot
-![screenshot](https://user-images.githubusercontent.com/26052559/161377588-2bb9f3fa-0ba5-42f6-a387-3950b91c177e.png)
+![screenshot](https://user-images.githubusercontent.com/26052559/163401381-99644902-eadb-4ba1-8c20-7eddf3b9682e.png)
 
 <br>
 
 ##  Architecture(MVVM)
-![architecture](https://user-images.githubusercontent.com/26052559/161376871-084f0c23-be44-4a45-b627-f36db9fd5a08.png)
+![architecture](https://user-images.githubusercontent.com/26052559/163401410-2dbe025b-0ab0-496c-b6af-247c8e8e3231.png)
 
 <br>
 

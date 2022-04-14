@@ -33,7 +33,7 @@ class App extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: AppString.appName,
-      theme: appThemeData,
+      theme: appThemeData(context),
       getPages: appPages,
       initialBinding: GlobalBinding(),
       initialRoute: RouteName.splash,

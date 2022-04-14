@@ -36,14 +36,15 @@ class RestService {
   }
 
   static Future<dynamic> requestPost(String url,
-      {Map<String, String>? headers, Map<String, dynamic>? body}) async {
+      {Map<String, String>? headers,
+      required Map<String, dynamic> body}) async {
     appLog('requestPost.url: $url, header: $headers, body: $body');
     try {
       return http
           .post(
         Uri.parse(url),
         headers: headers ?? baseHeaders,
-        body: json.encode(body ?? baseBody),
+        body: json.encode(body),
       )
           .timeout(const Duration(seconds: timeout), onTimeout: () {
         throw TimeoutException('$timeout seconds');

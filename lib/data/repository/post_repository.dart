@@ -10,15 +10,13 @@ abstract class PostRepository {
 class PostRepositoryImpl implements PostRepository {
   @override
   Future<List<Post>> fetchPosts() async {
-    final List<Post> posts = [];
     try {
-      dynamic json = await RestService.request(RestApi.fetchPosts.url);
-      for (var postData in json) {
-        posts.add(Post.fromMap(postData));
-      }
+      final List<dynamic> posts =
+          await RestService.request(RestApi.fetchPosts.url);
+      return posts.map((json) => Post.fromMap(json)).toList();
     } catch (e) {
       appLog('exception: $e');
     }
-    return posts;
+    return [];
   }
 }
