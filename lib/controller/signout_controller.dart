@@ -11,7 +11,7 @@ class SignoutController extends BaseController {
   Future<void> signout() async {
     loading = true;
 
-    await _userRepository.signout();
+    _userRepository.signout();
     Get.offAndToNamed(RouteName.signin);
 
     loading = false;

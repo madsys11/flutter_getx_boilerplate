@@ -18,7 +18,8 @@ class HomeScreen extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: const Text('HOME'),
-            leading: IconButton(onPressed: _signout, icon: Icon(Icons.logout)),
+            leading: IconButton(
+                onPressed: _showConfirmDialog, icon: Icon(Icons.logout)),
           ),
           body: Body(),
         ),
@@ -26,7 +27,17 @@ class HomeScreen extends StatelessWidget {
     });
   }
 
+  void _showConfirmDialog() {
+    Get.defaultDialog(
+      middleText: 'Do you want to sign out?',
+      cancel:
+          ElevatedButton(onPressed: () => Get.back(), child: Text('Cancel')),
+      confirm: ElevatedButton(onPressed: _signout, child: Text('Ok')),
+    );
+  }
+
   void _signout() {
+    Get.back();
     final signoutController = Get.find<SignoutController>();
     signoutController.signout();
   }

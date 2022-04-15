@@ -57,13 +57,13 @@ class UserRepositoryImpl implements UserRepository {
     box.write(AppKeys.signinId, value);
   }
 
-  void _sigininSuccess(String id, String token) {
+  void _signinSuccess(String id, String token) {
     GetStorage box = GetStorage();
     box.write(AppKeys.signinId, id);
     box.write(AppKeys.signinToken, token);
   }
 
-  void _siginout() {
+  void _signout() {
     GetStorage box = GetStorage();
     box.remove(AppKeys.signinToken);
   }
@@ -72,7 +72,7 @@ class UserRepositoryImpl implements UserRepository {
   Future<bool> signin(String id, String pw) async {
     // fake signin
     return await Future.delayed(Duration(seconds: 1), () {
-      _sigininSuccess(id, 'testToken');
+      _signinSuccess(id, 'testToken');
       return true;
     });
 
@@ -82,8 +82,8 @@ class UserRepositoryImpl implements UserRepository {
   @override
   Future<void> signout() async {
     // fake signout
-    await Future.delayed(Duration(seconds: 1), () {
-      _siginout();
+    Future.delayed(Duration(seconds: 1), () {
+      _signout();
     });
 
     // todo: signout from server
